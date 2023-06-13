@@ -97,12 +97,13 @@ class CpoController extends Controller
         return \Redirect::route('orders');
     }
     public function editorder($id){
+        $orders = Order::all();
         $order = Order::query()->where('id', $id)->first();
-        return view('order.edit', compact('order'));
+        return view('orders.edit', compact('order', 'orders'));
     }
     public function updateorder(Request $request)
     {
-        $order = Order::query()->where('id', $id)->update([
+        $order = Order::query()->where('id', $request->id)->update([
             'customer_id'=>$request->customerID,
             'product_id'=>$request->productID
         ]);
