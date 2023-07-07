@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe33f98a750b8c5a51b30c78bd3fab21",
+    "content-hash": "79702641ccc4dcca337fb209832c6890",
     "packages": [
         {
             "name": "brick/math",
@@ -3041,6 +3041,64 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "shiftechafrica/pam-php-sdk",
+            "version": "1.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SHIFTECH-AFRICA/pam-php-sdk.git",
+                "reference": "d76310792baf421d2dc00b7df2b89b4a32b36e06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SHIFTECH-AFRICA/pam-php-sdk/zipball/d76310792baf421d2dc00b7df2b89b4a32b36e06",
+                "reference": "d76310792baf421d2dc00b7df2b89b4a32b36e06",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PAM\\PAMServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PAM\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "shiftechafrica",
+                    "email": "info@shiftech.co.ke"
+                }
+            ],
+            "description": "This library handles all the PAM - PayBill Account Manager API's,that are then linked to Safaricom M-pesa Daraja.",
+            "keywords": [
+                "B2C",
+                "api",
+                "c2b",
+                "fintech solution",
+                "lipa-na-mpesa",
+                "m-pesa",
+                "pam",
+                "paybill account manager",
+                "stk-push"
+            ],
+            "support": {
+                "issues": "https://github.com/SHIFTECH-AFRICA/pam-php-sdk/issues",
+                "source": "https://github.com/SHIFTECH-AFRICA/pam-php-sdk/tree/1.4.7"
+            },
+            "time": "2023-02-24T16:05:04+00:00"
         },
         {
             "name": "symfony/console",

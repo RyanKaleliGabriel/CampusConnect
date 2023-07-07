@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MpesaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::post('stk', [MpesaController::class, 'lipaNaMpesaCallBack'])->name('stk.push');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

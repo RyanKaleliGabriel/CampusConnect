@@ -37,3 +37,5 @@ Route::post('order', [CpoController::class, 'storeorder'])->name('storeorder');
 Route::get('order/{order}/edit', [CpoController::class, 'editorder'])->name('editorder');
 Route::put('order/{order}', [CpoController::class, 'updateorder'])->name('updateorder');
 Route::delete('order/{order}', [CpoController::class, 'destroyorder'])->name('deleteorder');
+
+Route::post('order/pay', [CpoController::class, 'payorder'])->name('payorder');
